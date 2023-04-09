@@ -10,7 +10,7 @@
 
 
 
-    <!--IMC App-->
+<!--IMC App-->
     <color name="background_component">#1D1E33</color>
     <color name="background_component_selected">#FF111328</color>
     <color name="background_app">#0E0B20</color>
@@ -23,7 +23,7 @@
     <color name="peso_sobrepeso">#FF5722</color>
     <color name="obesidad">#FF1100</color>
 
-    <!--TodoApp-->
+<!--TodoApp-->
     <color name="todo_background_card">#FF081A4A</color>
     <color name="todo_background_disabled">#787878</color>
     <color name="todo_background_todo_app">#FF2D4993</color>
@@ -34,7 +34,7 @@
     <color name="todo_personal_category">#00BCD4</color>
     <color name="todo_other_category">#4CAF50</color>
 
-    <!--    SuperheroApp-->
+<!--    SuperheroApp-->
     <color name="superhero_item_name">#8B673AB7</color>
 
     <color name="superhero_stat_intelligence">#00ff00</color>
@@ -44,6 +44,6 @@
     <color name="superhero_stat_power">#FFEB3B</color>
     <color name="superhero_stat_combat">#673AB7</color>
 
-    <!--    Setting-->
+<!--    Setting-->
     <color name="settings_text_title">#000000</color>
 </resources>

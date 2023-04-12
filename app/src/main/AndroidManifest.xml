@@ -12,6 +12,13 @@
         android:theme="@style/Theme.AndroidM"
         tools:targetApi="31">
         <activity
+            android:name=".galleryapp.SuperHeroListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".todoapp.TodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TODOApp" />
+        <activity
             android:name=".calculetorimc.ResultIMCActivity"
             android:exported="false" />
         <activity

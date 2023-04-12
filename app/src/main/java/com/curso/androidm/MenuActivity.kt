@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import com.curso.androidm.calculetorimc.ImcActivity
 import com.curso.androidm.firstapp.FirstAppActivity
+import com.curso.androidm.galleryapp.SuperHeroListActivity
+import com.curso.androidm.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +20,17 @@ class MenuActivity : AppCompatActivity() {
         val btnImcApp = findViewById<Button>(R.id.btnIMC)
         btnImcApp.setOnClickListener { navigateToImcApp() }
 
+        val btnTODO = findViewById<Button>(R.id.btnTODO)
+        btnTODO.setOnClickListener { navigateToTodoApp() }
+
+        val btnSuperhero = findViewById<Button>(R.id.btnSuperhero)
+        btnSuperhero.setOnClickListener { navigateToSuperheroApp() }
+
+        val btnSettings = findViewById<Button>(R.id.btnSettings)
+        btnSettings.setOnClickListener { navigateToSettings() }
+
 
     }
-
 
 
     private fun navigateToSaluteApp() {
@@ -31,5 +41,20 @@ class MenuActivity : AppCompatActivity() {
     private fun navigateToImcApp() {
         val intent = Intent(this, ImcActivity::class.java)
         startActivity(intent)
+    }
+
+    private fun navigateToTodoApp() {
+        val intent = Intent(this, TodoActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSuperheroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSettings() {
+//        val intent = Intent(this, SettingsActivity::class.java)
+//        startActivity(intent)
     }
 }

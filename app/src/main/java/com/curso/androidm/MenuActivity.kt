@@ -7,10 +7,11 @@ import android.widget.Button
 import com.curso.androidm.calculetorimc.ImcActivity
 import com.curso.androidm.firstapp.FirstAppActivity
 import com.curso.androidm.galleryapp.SuperHeroListActivity
+import com.curso.androidm.settings.SettingsActivity
 import com.curso.androidm.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { // recommend used view bind here
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
@@ -54,7 +55,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun navigateToSettings() {
-//        val intent = Intent(this, SettingsActivity::class.java)
-//        startActivity(intent)
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
     }
 }

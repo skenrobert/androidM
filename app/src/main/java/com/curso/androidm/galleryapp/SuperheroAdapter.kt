@@ -7,7 +7,7 @@ import com.curso.androidm.R
 
 class SuperheroAdapter( //create recycle view
     var superheroList: List<SuperheroItemResponse> = emptyList(),
-    private val onItemSelected: (String) -> Unit
+    private val onItemSelected: (String) -> Unit //call back o fun landa return id
 ) :
     RecyclerView.Adapter<SuperheroViewHolder>() {
 
@@ -22,7 +22,7 @@ class SuperheroAdapter( //create recycle view
         )
     }
 
-    override fun onBindViewHolder(viewholder: SuperheroViewHolder, position: Int) {
+    override fun onBindViewHolder(viewholder: SuperheroViewHolder, position: Int) {// paint view an send onItenSelected  is fun with id element
         viewholder.bind(superheroList[position],onItemSelected)
     }
 

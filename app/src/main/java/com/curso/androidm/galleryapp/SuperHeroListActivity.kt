@@ -8,7 +8,7 @@ import android.util.Log
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-//import com.curso.androidm.superheroapp.DetailSuperheroActivity.Companion.EXTRA_ID
+import com.curso.androidm.galleryapp.DetailSuperheroActivity.Companion.EXTRA_ID
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -32,8 +32,6 @@ class SuperHeroListActivity : AppCompatActivity() {
         initUI()
     }
 
-//https://www.superheroapi.com/api.php/1880025192382288/search/super
-
     private fun initUI() {
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -44,7 +42,7 @@ class SuperHeroListActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?) = false
         })
 
-        adapter = SuperheroAdapter { superheroId ->  navigateToDetail(superheroId) }
+        adapter = SuperheroAdapter { superheroId ->  navigateToDetail(superheroId) } //iteration with id onclick in el superheroviewholder
         binding.rvSuperhero.setHasFixedSize(true)
         binding.rvSuperhero.layoutManager = LinearLayoutManager(this)
         binding.rvSuperhero.adapter = adapter
@@ -80,8 +78,8 @@ class SuperHeroListActivity : AppCompatActivity() {
     }
 
     private fun navigateToDetail(id: String) {
-//        val intent = Intent(this, DetailSuperheroActivity::class.java)
-//        intent.putExtra(EXTRA_ID, id)
-//        startActivity(intent)
+        val intent = Intent(this, DetailSuperheroActivity::class.java)
+        intent.putExtra(EXTRA_ID, id) //create in detailsuperheroactivity const, allow send data
+        startActivity(intent)
     }
 }

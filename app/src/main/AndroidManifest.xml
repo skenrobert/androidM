@@ -14,6 +14,15 @@
         android:theme="@style/Theme.AndroidM"
         tools:targetApi="31">
         <activity
+            android:name=".layoutdesign.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layoutdesign.LinerLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layoutdesign.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />
         <activity

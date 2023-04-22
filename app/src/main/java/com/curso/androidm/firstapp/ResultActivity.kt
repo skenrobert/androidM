@@ -12,6 +12,6 @@ class ResultActivity : AppCompatActivity() {
 
         val tvResult = findViewById<TextView>(R.id.tvResult)
         val name: String = intent.extras?.getString("Extra_Name").orEmpty()
-        tvResult.text = "Hola $name"
+        tvResult.text = "Hello $name"
     }
 }

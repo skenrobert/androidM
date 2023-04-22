@@ -17,6 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hola Result Constraint" />
+        tools:text="HI Result Constraint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

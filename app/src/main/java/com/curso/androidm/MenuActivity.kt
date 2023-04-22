@@ -7,6 +7,9 @@ import android.widget.Button
 import com.curso.androidm.calculetorimc.ImcActivity
 import com.curso.androidm.firstapp.FirstAppActivity
 import com.curso.androidm.galleryapp.SuperHeroListActivity
+import com.curso.androidm.layoutdesign.ConstraintLayoutActivity
+import com.curso.androidm.layoutdesign.FrameLayoutActivity
+import com.curso.androidm.layoutdesign.LinerLayoutActivity
 import com.curso.androidm.settings.SettingsActivity
 import com.curso.androidm.todoapp.TodoActivity
 
@@ -30,6 +33,14 @@ class MenuActivity : AppCompatActivity() {
         val btnSettings = findViewById<Button>(R.id.btnSettings)
         btnSettings.setOnClickListener { navigateToSettings() }
 
+        val btnFrameLayout = findViewById<Button>(R.id.btnFrameLayout)
+        btnFrameLayout.setOnClickListener { navigateToFrameLayout() }
+
+        val btnLinerLayout = findViewById<Button>(R.id.btnLinerLayout)
+        btnLinerLayout.setOnClickListener { navigateToLinerLayout() }
+
+        val btnConstraintLayout = findViewById<Button>(R.id.btnConstraintLayout)
+        btnConstraintLayout.setOnClickListener { navigateToConstraintLayout() }
 
     }
 
@@ -56,6 +67,21 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToSettings() {
         val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToFrameLayout() {
+        val intent = Intent(this, FrameLayoutActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToLinerLayout() {
+        val intent = Intent(this, LinerLayoutActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToConstraintLayout() {
+        val intent = Intent(this, ConstraintLayoutActivity::class.java)
         startActivity(intent)
     }
 }

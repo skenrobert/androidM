@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layoutdesign.FrameLayoutActivity">
+
+<!--  you have 3 value, match_parent, concrete size (150dp, 15dp), wrap_content(only size need your dependent element or son) -->
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="start|top"
+        android:background="#F44336"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="top|center"
+        android:background="#E91E63"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="top|end"
+        android:background="#9C27B0"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="start|center"
+        android:background="#673AB7"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:background="#3F51B5"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="end|center"
+        android:background="#2196F3"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="start|bottom"
+        android:background="#03A9F4"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="bottom|center"
+        android:background="#009688"/>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="end|bottom"
+        android:background="#4CAF50"/>
+
+</FrameLayout>

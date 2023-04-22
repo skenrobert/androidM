@@ -13,7 +13,7 @@
         android:id="@+id/btnSaludar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Saludar APP"
+        android:text="Greet APP"
         android:textSize="20dp"
         android:layout_gravity="center"
         />
@@ -47,5 +47,26 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Settings"/>
+
+    <Button
+        android:id="@+id/btnFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="FrameLayout"/>
+
+    <Button
+        android:id="@+id/btnLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="LinerLayout"/>
+
+    <Button
+        android:id="@+id/btnConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="constraintLayout"/>
 
 </LinearLayout>
